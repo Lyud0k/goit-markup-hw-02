@@ -11,9 +11,36 @@ body {
     background: var(--color-main);
     text-decoration: none;
  }
-.header-list {
+
+ /*спрятать*/
+ .visually-hidden{
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0000);
+     overflow: hidden;
+ }
+
+.dot-non {
     list-style: none;
 }
+
+ .ital-non{
+     font-style: normal;
+    }
+
+    .change{
+        color: var(--color-class);
+    }
+
+    .change-foot{
+        color: var(--color-main);
+    }
 
 .header-logo { 
     font-family: 'Raleway';
@@ -89,7 +116,7 @@ background: #2196F3
 
 .duty-none { }
 .duty-list {
-    list-style: none;
+   
  }
 .duty-item {
     
@@ -122,7 +149,7 @@ color: var(--color-class);
  }
 
 .work-list {
-    list-style: none;
+    
  }
 
 .work-item { }
@@ -139,7 +166,7 @@ color: var(--color-class);
  }
 
 .team-list {
-    list-style: none;
+    
  }
 
 .team-item { }
@@ -155,14 +182,16 @@ letter-spacing: 0.03em;
 color: var(--color-class);
 }
 
+.til-text{
+    
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
 .team-position {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.19;
-/* identical to box height */
 text-align: center;
-letter-spacing: 0.03em;
-color: #757575;
+
 }
 .footer {
     background: #2F303A;
@@ -182,11 +211,10 @@ color: var(--navi-color);
 
 .footer-place { }
 .footer-list {
-    list-style: none;
+
  }
 
 .link-view {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -201,4 +229,13 @@ color: rgba(255, 255, 255, 0.6);
 
 .footer-tel {
 color: rgba(255, 255, 255, 0.6);
+ }
+
+ /* портфолио */
+ .pic-list{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--color-class);
  }
